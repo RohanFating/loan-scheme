@@ -1,0 +1,7 @@
+const ARRANGEMENT_FEE = 88;
+const COMPLETETION_FEE = 20;
+
+export default {
+    ARRANGEMENT_FEE,
+    COMPLETETION_FEE,
+}
