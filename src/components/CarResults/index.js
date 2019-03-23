@@ -19,9 +19,9 @@ class CarResultsComponent extends Component {
                 <div className="col-md-6 my-2" key={`results_${index}`}>
                     <div className="card p-3">
                         <h5 className="card-title">{result.model}</h5>
-                        <span className="text-muted">Price: {result.price}</span>
-                        <span className="text-muted"> Deposit: {result.deposit}</span>
-                        <span className="text-muted">Monthly Payment: {result.monthlyPayment}</span>
+                        <span className="text-muted fs-12">Price: £ {result.price}</span>
+                        <span className="text-muted fs-12"> Deposit: £ {result.deposit}</span>
+                        <span className="text-muted fs-12">Monthly Payment: £ {result.monthlyPayment}</span>
                     </div>
                 </div>) : <h5 className="col-md-12 my-2 text-muted">
                 Sorry! No cars available to your budget please try increasing your price.</h5>}
