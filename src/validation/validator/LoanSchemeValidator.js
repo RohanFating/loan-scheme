@@ -6,9 +6,9 @@ const MIN_DEPOSIT_PERCENTAGE = 0.15;
 export const LoanSchemeValidator = (values) => {
     const errors = {};
     errors.price = validateType(validationTypes.NUMBER, values.price, validateMessages.numberField);
-    errors.delivery_date = validateType(validationTypes.NUMBER, values.delivery_date, validateMessages.dateField);
+    errors.deposit = validateType(validationTypes.NUMBER, values.deposit, validateMessages.depositFieldMessage);
     
-    errors.deposit= isRequired(values.deposit, validateMessages.depositFieldMessage);
+    errors.delivery_date= isRequired(values.delivery_date, validateMessages.dateField);
     if(!errors.deposit) {
         const deposit = parseFloat(values.deposit);
         const price = parseFloat(values.price);
