@@ -13,7 +13,8 @@ const loanScheme = ( state=initialFormState, action ) => {
         case actionTypes.GET_CAR_DETAILS_SUCCESS: 
         return {
             ...state,
-            carResults: getCarResults(action.payload.results ? action.payload.results.searchResults : [], action.payload.price),
+            carResults: getCarResults(action.payload.results ? 
+                action.payload.results.searchResults : [], action.payload.price),
         }
         default : return state;
     }

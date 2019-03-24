@@ -5,9 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Provider } from 'react-redux';
 import './App.css';
-import {
-  BrowserRouter,
-} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import store from './infrastructure/store';
 
 ReactDOM.render(

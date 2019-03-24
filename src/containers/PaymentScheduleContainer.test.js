@@ -22,26 +22,23 @@
 
 
 import React from 'react';
-import App from './App';
-import store from './infrastructure/store';
+import store from '../infrastructure/store';
 import { Provider } from 'react-redux';
 import Enzyme,{ mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { BrowserRouter } from 'react-router-dom';
+import PaymentScheduleContainer from './PaymentScheduleContainer';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 /**
- * Unit testing for App Component
+ * Unit testing for PaymentScheduleContainer Component
  */
-describe('App Component should', () => {
+describe('PaymentScheduleContainer should', () => {
 
-      it('be created without crash', () => {
-        const component = mount(<Provider store={store}>
-          <BrowserRouter>
-            < App />
-          </BrowserRouter>
-        </Provider>);
-        expect(component.find(App).length).toBe(1);
-      });
+    it('be created without crash', () => {
+    const component = mount(<Provider store={store}>
+        < PaymentScheduleContainer />
+    </Provider>);
+    expect(component.find(PaymentScheduleContainer).length).toBe(1);
+    });
 });

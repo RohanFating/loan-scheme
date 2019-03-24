@@ -24,7 +24,7 @@ const PaymentScheduleTable = (props) => {
 
 PaymentScheduleTable.propTypes = {
     paymentSchedules: PropTypes.array,
-    paymentDue: PropTypes.string,
+    paymentDue: PropTypes.number,
 };
 
 export default PaymentScheduleTable;

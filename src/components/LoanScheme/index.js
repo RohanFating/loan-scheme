@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 import { Field, reduxForm } from 'redux-form';
-import InputField from '../common/InputField';
+import InputField from '../common/InputFormField';
 import ButtonField from '../common/ButtonField';
 
 import { LoanSchemeValidator } from '../../validation/validator/LoanSchemeValidator';

@@ -6,7 +6,7 @@ const InputFormField = ({
     label,
     type,
     description,
-    meta: { touched, error, warning }
+    meta: { touched, error }
   }) => (
     <div>
       <div className="form-group">
