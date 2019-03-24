@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 import { Field, reduxForm } from 'redux-form';
-import InputField from '../Common/InputFormField';
-import ButtonField from '../Common/ButtonField';
+import InputField from '../CommonComponents/InputFormField';
+import ButtonField from '../CommonComponents/ButtonField';
 
 import { LoanSchemeValidator } from '../../validation/validator/LoanSchemeValidator';
-import SelectField from '../Common/SelectField';
+import SelectField from '../CommonComponents/SelectField';
 import formNames from '../../constants/formNames';
 import dropDown from '../../constants/dropDown';
 

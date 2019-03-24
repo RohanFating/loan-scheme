@@ -4,7 +4,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import LoanSchemeComponent from './';
 import { Provider } from 'react-redux';
 import store from '../..//infrastructure/store';
-import ButtonField from '../common/ButtonField';
 
 Enzyme.configure({ adapter: new Adapter() });
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import PaymentScheduleTable from './PaymentScheduleTable';
-import ButtonField from '../Common/ButtonField';
+import ButtonField from '../CommonComponents/ButtonField';
 import { getPaymentSchedule } from '../../utils/paymentScheduleUtil';
 
 class PaymentScheduleComponent extends Component {

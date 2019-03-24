@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import ButtonField from '../Common/ButtonField';
-import AppLoader from '../Common/AppLoader';
+import ButtonField from '../CommonComponents/ButtonField';
+import AppLoader from '../CommonComponents/AppLoader';
 
 class CarResultsComponent extends Component {
 
