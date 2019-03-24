@@ -1,6 +1,7 @@
-import { isRequired, validateType } from "../index";
+import { isRequired, validateType, validatePastDate } from "../index";
 import { default as validateMessages } from '../validationMessages';
 import validationTypes from "../../constants/validationTypes";
+
 const MIN_DEPOSIT_PERCENTAGE = 0.15;
 
 export const LoanSchemeValidator = (values) => {
@@ -8,7 +9,7 @@ export const LoanSchemeValidator = (values) => {
     errors.price = validateType(validationTypes.NUMBER, values.price, validateMessages.numberField);
     errors.deposit = validateType(validationTypes.NUMBER, values.deposit, validateMessages.depositFieldMessage);
     
-    errors.delivery_date= isRequired(values.delivery_date, validateMessages.dateField);
+    errors.delivery_date= validatePastDate(values.delivery_date, 'YYYY-MM-DD', validateMessages.dateField);
     if(!errors.deposit) {
         const deposit = parseFloat(values.deposit);
         const price = parseFloat(values.price);
